@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analysis using DSA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<h2>Text Analysis Tool (DSA Based)</h2>
+
+<!-- TEXT INPUT -->
+<textarea id="textInput" placeholder="Enter text here..."></textarea>
+<br><br>
+
+<!-- FILE UPLOAD -->
+<input type="file" id="fileInput" accept=".txt">
+<button onclick="readFile()">Load File</button>
+<br><br>
+
+<!-- KEYWORD + K -->
+<input type="text" id="keyword" placeholder="Enter keyword">
+<input type="number" id="kValue" placeholder="Enter K value">
+<br><br>
+
+<!-- ANALYZE BUTTON -->
+<button onclick="analyzeText()">Analyze</button>
+
+<!-- OUTPUT -->
+<h3>Results</h3>
+<div id="output"></div>
+
+<!-- BAR CHART -->
+<h3>Word Frequency Chart</h3>
+<canvas id="freqChart" width="600" height="300"></canvas>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 6px;
+}
+
+#output {
+    margin-top: 15px;
+}

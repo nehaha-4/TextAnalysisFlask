@@ -1,0 +1,2 @@
+Data structures and data algorithms improve data processing.
+Data analysis uses data structures.
